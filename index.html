@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <title>Houzing</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-white fixed-top bg-transparent py-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bolder" href="#">Houzing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HOME
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Home1</a></li>
+                            <li><a class="dropdown-item" href="#">Home2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            LISTING
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Listing1</a></li>
+                            <li><a class="dropdown-item" href="#">Listing2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROPERTY
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Property1</a></li>
+                            <li><a class="dropdown-item" href="#">Property2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Pages1</a></li>
+                            <li><a class="dropdown-item" href="#">Pages2</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tel:8819906886"><i
+                                class="fa fa-phone"></i>(+88)19906886</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="fa fa-user"></i></a>
+                    </li>&nbsp;
+                    <li class="nav-item">
+                        <button class="btn btn-light text-primary"><i class="fa fa-plus-circle"></i>&nbsp;CREATE
+                            LISTING</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="/Images/banner1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block ">
+                <p class="fw-bold">TRENDS</p>
+                <h2>Vormont Farmhouse with Antique Jail Is<br> the Week's Most Popular
+                    Home</h2>
+                <br>
+                <button class="btn btn-primary">READ MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container link2">
+        <div class="row my-5">
+            <div class="d-flex flex-direction-row justify-content-center">
+                <h3 class="fw-bold">Recent Properties For Rent</h3>
+            </div>
+            <div class="d-flex justify-content-center  mx-auto">
+                <p class="text-muted text-center mx-auto">
+                    Lorem ipsum dolor sit, consecteur adipsing alit
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+                <img src="/Images/property1.jpg" class="card-img-top" alt="...">
+                <div class="card w-100 shadow-sm mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">New Apartment View</h6>
+
+                        <p class="card-text text-muted" style="font-size: 0.8rem;">Quincy St, Brooklyn, NY, USA</p>
+
+                        <div class="row">
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bed"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">4 beds</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bath"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">5 baths</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-car"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1 garage</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-area-chart"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1200sqft</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <p style="font-size: 0.8rem; text-decoration: line-through;">$2800/mo</p>
+                                <p style="font-size: 1.0rem; font-weight: 600;">$7500/mo</p>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-expand"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-plus-circle"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-heart-o"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+                <img src="/Images/property2.jpg" class="card-img-top" alt="...">
+                <div class="card w-100 shadow-sm mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">Skyper Pool Apartment</h6>
+
+                        <p class="card-text text-muted" style="font-size: 0.8rem;">Quincy St, Brooklyn, NY, USA</p>
+
+                        <div class="row">
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bed"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">4 beds</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bath"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">5 baths</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-car"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1 garage</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-area-chart"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1200sqft</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <p style="font-size: 0.8rem; text-decoration: line-through;">$2800/mo</p>
+                                <p style="font-size: 1.0rem; font-weight: 600;">$5200/mo</p>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-expand"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-plus-circle"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-heart-o"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+                <img src="/Images/property3.jpg" class="card-img-top" alt="...">
+                <div class="card w-100 shadow-sm mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">New Caledonian Wharf</h6>
+
+                        <p class="card-text text-muted" style="font-size: 0.8rem;">Quincy St, Brooklyn, NY, USA</p>
+
+                        <div class="row">
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bed"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">4 beds</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bath"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">5 baths</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-car"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1 garage</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-area-chart"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">1200sqft</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <p style="font-size: 0.8rem; text-decoration: line-through;">$2800/mo</p>
+                                <p style="font-size: 1.0rem; font-weight: 600;">$1900/mo</p>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-expand"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-plus-circle"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-heart-o"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-xxl-3">
+                <img src="/Images/property4.jpg" class="card-img-top" alt="...">
+                <div class="card w-100 shadow-sm mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h6 class="card-title fw-bold">Spacios Family Home</h6>
+
+                        <p class="card-text text-muted" style="font-size: 0.8rem;">Quincy St, Brooklyn, NY, USA</p>
+
+                        <div class="row">
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bed"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">4 beds</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-bath"></i>
+                                <p class="text-muted" style="font-size: 0.6rem;">5 baths</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-car text-center"></i>
+                                <p class="text-muted text-center" style="font-size: 0.6rem;">1 garage</p>
+                            </div>
+                            <div class="col-sm-3 col-3 text-center">
+                                <i class="text-muted fa fa-area-chart text-center"></i>
+                                <p class="text-muted text-center" style="font-size: 0.6rem;">1200sqft</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <p style="font-size: 0.8rem; text-decoration: line-through;">$2800/mo</p>
+                                <p style="font-size: 1.0rem; font-weight: 600;">$3400/mo</p>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-expand"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-plus-circle"></i>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-muted fa fa-heart-o"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- cards section end -->
+
+    <!-- Agent Section -->
+    <div class="container py-5">
+        <div class="row my-5">
+            <div class="d-flex flex-direction-row justify-content-center">
+                <h3 class="fw-bold">Meet Our Agents</h3>
+            </div>
+            <div class="d-flex justify-content-center  mx-auto">
+                <p class="text-muted text-center mx-auto">
+                    Lorem ipsum dolor sit, consecteur adipsing alit
+                </p>
+            </div>
+
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-2 col-md-6">
+                <img src="/Images/1.jpg" class="img-thumbnail" alt="">
+                <div class="row mx-auto">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+                    <div class="shadow col-6 col-sm-6 col-md-6 col-lg-8 position-relative py-3 rounded agent  ">
+                        <h5 class="text-center fs-6">Robert Fox</h5>
+                        <p class="text-muted text-center" style="font-size: 0.7rem;">Lead Designer</p>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+
+                </div>
+                <!-- <div class="shadow agent p-2">
+                    <h5 class="text-center fs-6">Robert Fox</h5>
+                    <p class="text-muted text-center">Lead Designer</p>
+                </div> -->
+
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <img src="/Images/2.jpg" class="img-thumbnail" alt="">
+                <div class="row mx-auto">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+                    <div class="shadow col-6 col-sm-6 col-md-6 col-lg-8 py-3 rounded agent">
+
+                        <h5 class="text-center fs-6">David</h5>
+                        <p class="text-muted text-center" style="font-size: 0.7rem;">Host</p>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <img src="/Images/3.jpg" class="img-thumbnail" alt="">
+                <div class="row mx-auto">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+                    <div class="shadow col-6 col-sm-8 col-md-6 col-lg-8 py-3 rounded agent">
+                        <h5 class="text-center fs-6">Mike</h5>
+                        <p class="text-muted text-center" style="font-size: 0.7rem;">Developer</p>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <img src="/Images/4.jpg" class="img-thumbnail" alt="">
+                <div class="row mx-auto">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+                    <div class="shadow col-6 col-sm-8 col-md-6 col-lg-8 py-3 rounded agent">
+                        <h5 class="text-center fs-6">John</h5>
+                        <p class="text-muted text-center" style="font-size: 0.7rem;">CEO</p>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-2 col-md-6">
+                <img src="/Images/5.jpg" class="img-thumbnail p-0" alt="">
+                <div class="row mx-auto">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+                    <div class="shadow col-6 col-sm-8 col-md-6 col-lg-8 py-3 rounded agent">
+                        <h5 class="text-center fs-6">Alisha</h5>
+                        <p class="text-muted text-center" style="font-size: 0.7rem;">Lead Developer</p>
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Blog section -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="d-flex flex-direction-row justify-content-center">
+                    <h3 class="fw-bold">Recent Properties For Rent</h3>
+                </div>
+                <div class="d-flex justify-content-center  mx-auto">
+                    <p class="text-muted text-center mx-auto">
+                        Lorem ipsum dolor sit, consecteur adipsing alit
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-3 col-xxl-3">
+                    <img src="/Images/blog1.jpg" class="card-img-top" alt="...">
+                    <div class="card w-100 shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-user text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">Robert Fox</p>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-calendar text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">6 April 2021</p>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Redfn Ranks the Most Competitive Neighborhoods of 2020</h6>
+
+                            <p class="card-text text-muted" style="font-size: 0.8rem;">Sampler sagittis facillis present
+                                elementum purus faucibus non tempus</p>
+
+                            <a href="#" class="fs-6 fw-bold">READ MORE</a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-lg-3 col-md-3 col-xxl-3">
+                    <img src="/Images/blog2.jpg" class="card-img-top" alt="...">
+                    <div class="card w-100 shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-user text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">Robert Fox</p>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-calendar text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">6 April 2021</p>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Redfn Ranks the Most Competitive Neighborhoods of 2020</h6>
+
+                            <p class="card-text text-muted" style="font-size: 0.8rem;">Sampler sagittis facillis present
+                                elementum purus faucibus non tempus</p>
+
+                            <a href="#" class="fs-6 fw-bold">READ MORE</a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-lg-3 col-md-3 col-xxl-3">
+                    <img src="/Images/blog3.jpg" class="card-img-top" alt="...">
+                    <div class="card w-100 shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-user text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">Robert Fox</p>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-calendar text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">6 April 2021</p>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Redfn Ranks the Most Competitive Neighborhoods of 2020</h6>
+
+                            <p class="card-text text-muted" style="font-size: 0.8rem;">Sampler sagittis facillis present
+                                elementum purus faucibus non tempus</p>
+
+                            <a href="#" class="fs-6 fw-bold">READ MORE</a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-lg-3 col-md-3 col-xxl-3">
+                    <img src="/Images/blog4.jpg" class="card-img-top" alt="...">
+                    <div class="card w-100 shadow mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-user text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">Robert Fox</p>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xxl-6 d-flex">
+                                    <i class="fa fa-calendar text-muted"></i>&nbsp;
+                                    <p class="text-muted" style="font-size: 0.7rem;">6 April 2021</p>
+                                </div>
+                            </div>
+                            <h6 class="card-title fw-bold">Redfn Ranks the Most Competitive Neighborhoods of 2020</h6>
+
+                            <p class="card-text text-muted" style="font-size: 0.8rem;">Sampler sagittis facillis present
+                                elementum purus faucibus non tempus</p>
+
+                            <a href="#" class="fs-6 fw-bold">READ MORE</a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Blog section end -->
+    <!-- Footer start -->
+    <div class="container-fluid custom-bg py-3">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 col-lg-3 col-md-6 col-xxl-3">
+                    <h6 class="text-light">
+                        Contact Us
+                    </h6>
+                    <br>
+
+                    <div>
+                        <i class="fa fa-map-marker text-white"></i><span class="ms-2 text-white">329 Quensberry
+                            Street,
+                            North
+                            Melbourne VIC, Austrailia</span><br><br>
+                        <i class="fa fa-phone text-white"></i><span class="ms-2 text-white">12 345 6789</span><br><br>
+                        <i class="fa fa-envelope text-light"></i><span
+                            class="ms-2 text-white">support@houzing.com</span>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-3 col-sm-3">
+                            <i class="fa fa-facebook text-white"></i>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <i class="fa fa-twitter text-white"></i>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <i class="fa fa-instagram text-white"></i>
+                        </div>
+                        <div class="col-3 col-sm-3">
+                            <i class="fa fa-linkedin text-white"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6 col-xxl-2">
+                    <h6 class="text-light">
+                        Discover
+                    </h6>
+                    <br>
+
+                    <div>
+                        <span class="ms-2 text-white">Chicago</span><br><br>
+                        <span class="ms-2 text-white">Los Angelos</span><br><br>
+                        <span class="ms-2 text-white">Miami</span><br><br>
+                        <span class="ms-2 text-white">New York</span><br><br>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6 col-xxl-2">
+                    <h6 class="text-light">
+                        List By Category
+                    </h6>
+                    <br>
+
+                    <div>
+                        <span class="ms-2 text-white">Apartments</span><br><br>
+                        <span class="ms-2 text-white">Candos</span><br><br>
+                        <span class="ms-2 text-white">Houses</span><br><br>
+                        <span class="ms-2 text-white">Offices</span><br><br>
+                        <span class="ms-2 text-white">Retail</span><br><br>
+                        <span class="ms-2 text-white">Villas</span><br><br>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-6 col-xxl-2">
+                    <h6 class="text-light">
+                        Quick Links
+                    </h6>
+                    <br>
+
+                    <div>
+                        <span class="ms-2 text-white">About Us</span><br><br>
+                        <span class="ms-2 text-white">Terms & Conditions</span><br><br>
+                        <span class="ms-2 text-white">User's Guide</span><br><br>
+                        <span class="ms-2 text-white">Support Center</span><br><br>
+                        <span class="ms-2 text-white">Press Info</span><br><br>
+                        <span class="ms-2 text-white">Contact Info</span><br><br>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6 col-lg-3 col-md-6 col-xxl-3">
+                    <h6 class="text-light">
+                        Subscribe
+                    </h6>
+                    <br>
+                    <span class="text-light">We don't send spam so don't worry</span><br><br>
+                    <form>
+                        <div class="mb-3">
+
+                            <input type="email" placeholder="Email" class="form-control border-none bg-white text-dark">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="text-white w-100">
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <p class="text-white" style="font-size: 0.8rem;">
+                        Copyright @ 2022 Creativelayers. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <h1 class="text-white fs-4 text-center">
+                        Houzing
+                    </h1>
+                </div>
+                <div class=" col-12 col-sm-5 col-lg-5">
+                    <div class="row">
+                        <div class="col-3 col-md-3 col-lg-3 col-xxl-3">
+                            <p class="text-white text-center" style="font-size: 0.8rem;">
+                                Home
+                            </p>
+                        </div>
+                        <div class="col-3 col-md-3 col-lg-3 col-xxl-3">
+                            <p class="text-white" style="font-size: 0.8rem;">
+                                Site Map
+                            </p>
+                        </div>
+                        <div class="col-3 col-md-3 col-lg-3 col-xxl-3">
+                            <p class="text-white" style="font-size: 0.8rem;">
+                                Privacy Policy
+                            </p>
+                        </div>
+                        <div class="col-3 col-md-3 col-lg-3 col-xxl-3">
+                            <p class="text-white" style="font-size: 0.8rem;">
+                                Cookie Policy
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+        });
+        // $(".slider").owlCarousel({
+        //     loop: true,
+        //     autoplay: true,
+
+        // }); 
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
+}
+
+.agent {
+    margin-top: -40px;
+    z-index: 9999 !important;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.custom-bg {
+    background-color: #0D263C;
+}
